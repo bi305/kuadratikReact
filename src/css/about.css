@@ -1,0 +1,11 @@
+.about{
+background-image: url(../man.jpg);
+background-size: cover;
+}
+.overlay_about{
+    background-color: black;
+    opacity: 0.55 ;
+    color: white;
+    height: 100vh;
+    width: 100%; 
+}

@@ -1,0 +1,14 @@
+.contact_bg{
+    background-image: url(../about2.jpg);
+    background-size: cover;
+}
+.overlay_contact{
+    
+    background-color: black;
+    opacity: 0.55 ;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
