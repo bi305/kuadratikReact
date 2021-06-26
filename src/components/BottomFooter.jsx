@@ -31,6 +31,13 @@ const BottomFooter = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
+                        <NavLink href="/about" >
+
+                            About
+
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
                         <NavLink href="/who-we-are">
 
                             Who We Are

@@ -1,14 +1,20 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, } from 'reactstrap';
-import WhoWeAre from '../WhoWeAre';
-import Home from '../Home';
-import Products from '../Products';
-import About from '../About';
-import ContactsUs from '../ContactsUs';
+// import WhoWeAre from '../WhoWeAre';
+// import Home from '../Home';  
+// import Products from '../Products';
+// import About from '../About';
+// import ContactsUs from '../ContactsUs';
+import { Suspense, lazy } from 'react';
 import "../css/NavBar.css"
 
 
+const Home = lazy(() => import('../Home'))
+const About = lazy(() => import('../About'))
+const Products = lazy(() => import('../Products'))
+const ContactsUs = lazy(() => import('../ContactsUs'))
+const WhoWeAre = lazy(() => import('../WhoWeAre'))
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -60,25 +66,25 @@ const NavBar = () => {
                 </Collapse>
             </Navbar>
 
-
-
-            <Switch>
-                <Route path="/" exact>
-                    <Home />
-                </Route>
-                <Route path="/about" >
-                    <About />
-                </Route>
-                <Route path="/Who-we-are">
-                    <WhoWeAre />
-                </Route>
-                <Route path="/products">
-                    < Products />
-                </Route>
-                <Route path="/contact-us">
-                    < ContactsUs />
-                </Route>
-            </Switch>
+            <Suspense fallback={<div><h1>Loading....</h1></div>}>
+                <Switch>
+                    <Route path="/" exact>
+                        <Home />
+                    </Route>
+                    <Route path="/about" >
+                        <About />
+                    </Route>
+                    <Route path="/Who-we-are">
+                        <WhoWeAre />
+                    </Route>
+                    <Route path="/products">
+                        < Products />
+                    </Route>
+                    <Route path="/contact-us">
+                        < ContactsUs />
+                    </Route>
+                </Switch>
+            </Suspense>
 
         </Router >
 

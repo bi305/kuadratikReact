@@ -7,6 +7,7 @@ import {
 } from 'reactstrap';
 import './css/products.css'
 import Footer from './components/footer';
+import BottomFooter from './components/BottomFooter';
 const Products = () => {
     return (
         <>
@@ -100,6 +101,7 @@ const Products = () => {
                 </Row>
             </Container>
             <Footer />
+            <BottomFooter />
         </>
     )
 }
