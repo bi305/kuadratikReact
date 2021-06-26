@@ -118,7 +118,7 @@ const Home = () => {
                                 </p>
                             </Col>
                             <Col md={6}>
-                                <img src={germination} className="img-fluid w-75 rounded border border-danger" />
+                                <img src={germination} className="img-fluid w-75 rounded " />
                             </Col>
 
                             <Col md={6} className="mt-5">
@@ -132,7 +132,7 @@ const Home = () => {
                                 </p>
                             </Col>
                             <Col md={6} className="mt-5">
-                                <img src={placeholder} className="img-fluid w-75 rounded border border-danger" />
+                                <img src={placeholder} className="img-fluid w-75 rounded " />
                             </Col>
                         </Row>
                     </Container>

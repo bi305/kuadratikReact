@@ -79,6 +79,12 @@ const ContactsUs = () => {
                         <p>
                             +1 647-470-6922
                         </p>
+                        <p>
+                            <i class="mr-3 fa-2x fa fa-facebook-official" aria-hidden="true"></i>
+                            <i class="mx-3 fa-2x fa fa-twitter-square" aria-hidden="true"></i>
+                            <i class="mx-3 fa-2x fa fa-google-plus-square" aria-hidden="true"></i>
+
+                        </p>
                     </Col>
                 </Row>
             </Container>
