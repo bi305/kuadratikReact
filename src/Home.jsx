@@ -17,6 +17,7 @@ import BottomFooter from './components/BottomFooter';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import './home.css'
+import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <>
@@ -59,18 +60,33 @@ const Home = () => {
             <ScrollAnimation animateIn='fadeIn'
                 animateOut='fadeOut'>
                 <Container className="bg-light  " fluid >
-                    <Row className="mt-5">
-                        <Col md={6} className="p-4">
+                    <Row className="mt-5 d-flex justify-content-center">
+                        <Col md={12} className="p-4 text-center ">
+
+                            <ScrollAnimation animateIn="flipInX">
+                                <div class=" bg-dark text-white  ">
+                                    <img class="card-img img-fluid w-50" src={fantasy} alt="Card image" />
+                                    <div class="card-img-overlay">
+                                        <ScrollAnimation animateIn="flipInY">
+                                            <h5 class="card-title display-1">
+                                                Creating Ideas...
+                                            </h5>
+                                        </ScrollAnimation>
 
 
-                            <img className="img-fluid w-75" src={fantasy} />
+                                    </div>
+                                </div>
+                                {/* <img className="img-fluid w-50" src={fantasy} /> */}
+                            </ScrollAnimation>
 
                         </Col>
-                        <Col md={6}>
+                        {/* <Col md={6}>
                             <h1 className="text-center mt-5 p-5 ">
-                                Creating Ideas...
+                                <ScrollAnimation animateIn="bounceInLeft">
+                                    Creating Ideas...
+                                </ScrollAnimation>
                             </h1>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Container>
 
@@ -81,14 +97,19 @@ const Home = () => {
                 <Container className="bg-light  my-5" fluid>
                     <Row className="mt-5">
                         <Col md={6}>
-                            <h1 className="text-center mt-5 p-5">
+                            <ScrollAnimation animateIn="bounceInLeft">
+                                <h1 className="text-center mt-5 p-5">
 
-                                ...Building Great Products
-                            </h1>
+                                    ...Building Great Products
+                                </h1>
+                            </ScrollAnimation>
                         </Col>
                         <Col md={6}>
-                            <img className="img-fluid" src={girls} />
+                            <ScrollAnimation animateIn="bounceInRight">
+                                <img className="img-fluid" src={girls} />
+                            </ScrollAnimation>
                         </Col>
+
                     </Row>
                 </Container>
             </ScrollAnimation>
@@ -99,12 +120,14 @@ const Home = () => {
                     <Container className="my-5"  >
                         <Row className="mt-5">
                             <Col md={12} className="text-center">
-                                <h1 className=" playbook">
-                                    <span>
+                                <ScrollAnimation animateIn="flipInX">
+                                    <h1 className=" playbook">
+                                        <span>
 
-                                        Playbook
-                                    </span>
-                                </h1>
+                                            Playbook
+                                        </span>
+                                    </h1>
+                                </ScrollAnimation>
                             </Col>
                             <Col md={6}>
                                 <h2>
@@ -168,9 +191,9 @@ const Home = () => {
 
 
                                 </p>
-                                <a href="">
+                                <Link to="/products">
                                     Learn More
-                                </a>
+                                </Link>
 
                             </h1>
 

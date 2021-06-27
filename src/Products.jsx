@@ -8,6 +8,8 @@ import {
 import './css/products.css'
 import Footer from './components/footer';
 import BottomFooter from './components/BottomFooter';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const Products = () => {
     return (
         <>
@@ -28,76 +30,125 @@ const Products = () => {
             </Container  >
             <Container className="my-5 ">
                 <Row>
-                    <Col md="12">
+                    <ScrollAnimation animateIn="bounceInRight">
+                        <Col md="12">
 
-                        <p>
-                            Digital Solution
-                        </p>
-                        <h3>
+                            <p>
+                                Digital Solution
+                            </p>
+                            <h3>
+                                <a className="glow" href="https://www.reeveue.com">
+                                    ReeVeue
+                                </a>
+                            </h3>
+                            <p>
+                                A solution to help consumers make informed non-bias choices, based on data
+                            </p>
+                        </Col>
 
-                            ReeVeue
-                        </h3>
-                        <p>
-                            A solution to help consumers make informed non-bias choices, based on data
-                        </p>
-                    </Col>
+                    </ScrollAnimation>
                 </Row>
             </Container>
             <Container className="my-5">
                 <Row>
-                    <Col md="12">
+                    <ScrollAnimation animateIn="bounceInRight">
+                        <Col md="12">
 
-                        <p>
+                            <p>
 
-                            Health Solution
-                        </p>
-                        <h3>
+                                Digital Solution
 
 
-                            PhytoScience
-                        </h3>
-                        <p>
-                            A natural health solution made from fruits, vegetables and spices to repair, rebuild and rejuvenate damaging cells
-                        </p>
-                    </Col>
+
+                            </p>
+                            <h3>
+
+                                <a className="glow" href="https://www.jolificate.com">
+                                    Jolificate
+                                </a>
+                            </h3>
+                            <p>
+                                A platform where users can celebrate each other – create a theme with different boards, add friends/families to board, users can add messages, upload pictures/videos, save, edit, share and publish board with celebrant.
+                            </p>
+                        </Col>
+
+                    </ScrollAnimation>
                 </Row>
             </Container>
             <Container className="my-5">
                 <Row>
-                    <Col md="12">
+                    <ScrollAnimation animateIn="bounceInRight">
+                        <Col md="12">
 
-                        <p>Social Media
-                        </p>
-                        <h3>
+                            <p>
+
+                                eCommerce Marketplace
 
 
-                            Fusedtube
-                        </h3>
-                        <p>
-                            Designed to mend broken homes and heal marriages
-                        </p>
-                    </Col>
+
+                            </p>
+                            <h3>
+                                <a className="glow" href="https://www.Eki.market">
+                                    Eki
+                                </a>
+
+                            </h3>
+                            <p>
+
+                                This is an Online marketplace where food suppliers, shippers and food consumers meet to transact business. The consumer logs into the marketplace to buy food items from the supplier and picks a shipping agent to deliver the purchased items.
+
+                            </p>
+                        </Col>
+
+                    </ScrollAnimation>
+
+                </Row>
+            </Container>
+
+            <Container className="my-5">
+                <Row>
+                    <ScrollAnimation animateIn="bounceInRight">
+                        <Col md="12">
+
+                            <p>Social Media
+                            </p>
+                            <h3>
+                                <a className="glow" href="https://www.fusedtube.com">
+                                    Fusedtube
+                                </a>
+
+                            </h3>
+                            <p>
+                                Designed to mend broken homes and heal marriages
+                            </p>
+                        </Col>
+
+                    </ScrollAnimation>
                 </Row>
             </Container>
             <Container className="my-5">
                 <Row>
-                    <Col md="12">
+                    <ScrollAnimation animateIn="bounceInRight">
+                        <Col md="12">
 
-                        <p>
+                            <p>
 
-                            Media
+                                Media
 
-                        </p>
-                        <h3>
+                            </p>
+                            <h3>
 
+                                <a className="glow" className="glow" href="">
+                                    Face Of Diversity
+                                </a>
 
-                            Face Of Diversity
+                            </h3>
+                            <p>
+                                Using media technology to showcase and bring the Canadian cultural diversity, values and socio-political heritage to lime light
+                            </p>
+                        </Col>
 
-                        </h3>
-                        <p>
-                            Using media technology to showcase and bring the Canadian cultural diversity, values and socio-political heritage to lime light
-                        </p>
-                    </Col>
+                    </ScrollAnimation>
                 </Row>
             </Container>
             <Footer />
@@ -105,5 +156,8 @@ const Products = () => {
         </>
     )
 }
+// 
+// Eki
+// This is an Online marketplace where food suppliers, shippers and food consumers meet to transact business. The consumer logs into the marketplace to buy food items from the supplier and picks a shipping agent to deliver the purchased items.
 
 export default Products

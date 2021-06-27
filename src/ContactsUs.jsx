@@ -59,7 +59,7 @@ const ContactsUs = () => {
                         </p>
                         <p>
 
-                            69-130 Ling Road, Toronto ON M1E 4V9
+                            109 Angier Crescent Ajax ON L1S 7R4
                         </p>
                         <p style={{ fontSize: '13px' }}>
                             <b>
@@ -77,7 +77,7 @@ const ContactsUs = () => {
                             </b>
                         </p>
                         <p>
-                            +1 647-470-6922
+                            +16474706922 ,  +16474706921
                         </p>
                         <p>
                             <i class="mr-3 fa-2x fa fa-facebook-official" aria-hidden="true"></i>

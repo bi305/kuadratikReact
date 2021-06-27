@@ -8,7 +8,8 @@ const footer = () => {
                 <Row>
                     <Col md="12 my-5">
                         <h1 className="get">
-                            Get In Touch
+                            New York address
+
                         </h1>
                     </Col>
                     <Col md="4">
@@ -91,7 +92,7 @@ const footer = () => {
 
                                 </p>
                             </Col>
-                           
+
                         </Row>
                     </Col>
                 </Row>

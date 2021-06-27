@@ -7,6 +7,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, } 
 // import About from '../About';
 // import ContactsUs from '../ContactsUs';
 import { Suspense, lazy } from 'react';
+import logo from '../logo.png';
 import "../css/NavBar.css"
 
 
@@ -30,7 +31,7 @@ const NavBar = () => {
             linear-gradient(40deg,#ff6ec4,#7873f5)!important */}
                 <NavbarBrand href="/"><h1>
 
-                    <img src="http://kuadratik.com/wp-content/uploads/2020/10/km-logo-black.svg" width="200px" />
+                    <img src={logo} width="200px" />
                 </h1>
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
@@ -41,11 +42,11 @@ const NavBar = () => {
                                 Home
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <NavLink href="/about">
                                 About
                             </NavLink>
-                        </NavItem>
+                        </NavItem> */}
                         <NavItem>
                             <NavLink href="/who-we-are">
                                 Who We Are
