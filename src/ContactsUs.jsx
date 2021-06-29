@@ -23,7 +23,7 @@ const ContactsUs = () => {
             <ScrollAnimation animateIn="flipInY" className="">
               <h1 className="my-5" style={{ color: "#163bbd" }}>
                 {" "}
-                We're Ready, Let's Talk.
+                We are ready, let's talk.
               </h1>
               <Form>
                 <FormGroup>

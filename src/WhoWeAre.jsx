@@ -25,7 +25,7 @@ const WhoWeAre = () => {
       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
         <Container>
           <Row className="my-5 bg-white" style={{ color: "#163bbd" }}>
-            <Col md="6" className="p-5 text-center ">
+            <Col md="6" className="p-5 text-justify ">
               <h1
                 className="mt-5"
                 style={{
@@ -36,9 +36,9 @@ const WhoWeAre = () => {
               </h1>
 
               <p className="mt-2 ">
-                We are united by a single goal: to create digital solutions that
-                will <br /> elevate the customer experience, shape the cultural
-                landscape and <br /> get people connected
+                We are united by a single goal to create digital solutions that
+                will elevate the customer experience, shape the cultural
+                landscape and get people connected.
               </p>
             </Col>
             <Col md="6">
@@ -54,8 +54,10 @@ const WhoWeAre = () => {
             <Col md="6">
               <img src={ExtraOrdinary} className="img-fluid rounded " />
             </Col>
-            <Col md="6" className="p-5  text-center ">
-              <h1 className="my-5">Extraordinary Experiences</h1>
+            <Col md="6" className="p-5  ">
+              <div className="text-center ">
+                <h1 className="my-5 ">Extraordinary Experiences</h1>
+              </div>
               <p>
                 We are a curated team of brilliant experts driven by passion,
                 <br /> enthusiasm, innovation and determination

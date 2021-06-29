@@ -11,6 +11,7 @@ import CreatingIdeas from "./assets/CreatingIdeas.jpg";
 import BuildingGreatProducts from "./assets/BuildingGreatProducts.jpg";
 import Sprout from "./assets/Sprout.jpg";
 import CustomerDriven from "./assets/CustomerDriven.jpg";
+import Explore from "./assets/explore.jpg";
 
 import "./home.css";
 import { Link } from "react-router-dom";
@@ -41,7 +42,7 @@ const Home = () => {
               className="d-flex justify-content-center align-items-center"
             >
               <ScrollAnimation animateIn="bounceInLeft">
-                <h1 className="">We Are A Solutions Outfit</h1>
+                <h1 className="">We are a solutions outfit</h1>
               </ScrollAnimation>
             </Col>
             <Col md={6}>
@@ -85,15 +86,7 @@ const Home = () => {
             </Col>
             <Col md={6}>
               <ScrollAnimation animateIn="bounceInRight">
-                <img
-                  className="img-fluid"
-                  style={{
-                    height: "450px",
-                    width: "100%",
-                    objectFit: "center",
-                  }}
-                  src={BuildingGreatProducts}
-                />
+                <img className="img-fluid" src={BuildingGreatProducts} />
               </ScrollAnimation>
             </Col>
           </Row>
@@ -131,7 +124,38 @@ const Home = () => {
           </Container>
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn" className="mb-5" animateOut="fadeOut">
+      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+        <Container className="  my-5" style={{ color: "#163bbd" }} fluid>
+          <Row className="mt-5 ">
+            <Col
+              md={6}
+              className="d-flex justify-content-center align-items-center "
+            >
+              <ScrollAnimation animateIn="bounceInLeft">
+                <h1 className="">
+                  Explore Great Solutions
+                  <p
+                    style={{
+                      fontSize: "15px",
+                      lineHeight: "2",
+                      marginTop: "20px",
+                    }}
+                  >
+                    See one of our great products
+                  </p>
+                  <Link to="/products">Learn More</Link>
+                </h1>
+              </ScrollAnimation>
+            </Col>
+            <Col md={6}>
+              <ScrollAnimation animateIn="bounceInRight">
+                <img className="img-fluid" src={Explore} />
+              </ScrollAnimation>
+            </Col>
+          </Row>
+        </Container>
+      </ScrollAnimation>
+      {/* <ScrollAnimation animateIn="fadeIn" className="mb-5" animateOut="fadeOut">
         <div
           style={{
             backgroundImage: `url(${section})`,
@@ -168,7 +192,7 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
       {/* <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
         <Footer />
       </ScrollAnimation> */}
