@@ -1,15 +1,14 @@
- 
- 
-
-.fix {
-    width: 100%;
-     
-    position: fixed;
-   
+.nav-link {
+  color: #163bbd;
+  font-size: large;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: #021969;
 }
 
- 
+.fix {
+  width: 100%;
 
-
- 
- 
+  position: fixed;
+}

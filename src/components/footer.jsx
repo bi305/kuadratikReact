@@ -1,104 +1,55 @@
-import { Container, Row, Col } from 'reactstrap'
-import '../css/footer.css';
+import { Container, Row, Col } from "reactstrap";
+import "../css/footer.css";
 
-const footer = () => {
-    return (
-        <div>
-            <Container className=" mt-5">
-                <Row>
-                    <Col md="12 my-5">
-                        <h1 className="get">
-                            New York address
+const Footer = () => {
+  return (
+    <div>
+      <Container
+        className=" mt-5 mb-5 p-3"
+        style={{
+          border: "4px solid #13547a",
+          borderRadius: "20px",
+        }}
+      >
+        <h1 className="get">New York Address</h1>
+        <Row className="pt-1 pb-3">
+          <Col md="4" className=" justify-content-center d-flex flex-column">
+            <p>
+              You can use a few enticing words and flaunt your capabilities that
+              will attract future clients and encourage them to hire you right
+              away.
+            </p>
+            <b>
+              <span className="border-bottom" style={{ color: "#13547a" }}>
+                Let's Talk <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </b>
+          </Col>
 
-                        </h1>
-                    </Col>
-                    <Col md="4">
-                        <Row>
+          <Col md="4 mb-1">
+            <h4 style={{ color: "#13547a" }}>Contact Details</h4>
+            <div>
+              <b>Kyle Mills</b>
+            </div>
 
-                            <Col md="12 my-5 ">
-                                <p>You can use a few enticing words and flaunt your capabilities that will attract future clients and encourage them to hire you right away.</p>
-                            </Col>
-                            <Col md="12 ">
-                                <b>
-                                    <span className="border-bottom">
+            <div className="mt-1">
+              Phone:<b>+16474706922</b>
+            </div>
+            <div className="mt-1">
+              Email:<b>admin@kuadratik.com</b>
+            </div>
+          </Col>
+          <Col md="4">
+            <h3 className="h4  mb-1" style={{ color: "#13547a" }}>
+              My Location
+            </h3>
 
-                                        Let's Talk <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                    </span>
+            <p>123 Fifth Avenue, New York, NY 10160</p>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+};
 
-                                </b>
-
-                            </Col>
-                        </Row>
-                    </Col>
-                    <Col md="4">
-                        <Row>
-                            <Col md="12 mt-5 mb-4">
-                                <h3 className="pb-3">
-
-                                    Contact Details
-                                </h3>
-                                <p>
-
-                                    <b>
-
-                                        Kyle Mills
-                                    </b>
-                                </p>
-
-
-                            </Col>
-                            <Col md="12">
-                                <p>
-                                    Phone:
-                                </p>
-                                <p>
-
-                                    <b>
-
-                                        +1 910-626-85255
-                                    </b>
-                                </p>
-
-
-                            </Col>
-                            <Col md="12">
-                                <p>
-                                    Email:
-
-                                </p>
-                                <p>
-                                    <b>
-
-                                        contact@hello.com
-                                    </b>
-                                </p>
-
-                            </Col>
-                        </Row>
-                    </Col>
-                    <Col>
-                        <Row>
-                            <Col md="12 my-5 ">
-                                <h3>
-                                    My Location
-                                </h3>
-                            </Col>
-
-                            <Col md="12 mt-5">
-
-                                <p>
-                                    123 Fifth Avenue,<br />
-                                    New York, NY 10160
-
-                                </p>
-                            </Col>
-
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-    )
-}
-
-export default footer
+export default Footer;

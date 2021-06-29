@@ -1,15 +1,24 @@
-.bg2{
-    background-image: url(../corn.jpg);
-    background-size: cover;
-    height: 100%;
-    background-repeat: no-repeat;
+.bg2 {
+  background-image: url(../assets/OurProducts.jpg);
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
 }
-.overlay{
-    background-color: black;
-    opacity: 0.55 ;
-    color: white;
-    height: 100vh;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.overlay {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.linkp {
+  color: #163bbd;
+}
+.linkp:hover {
+  color: red;
+}
+.who {
+  color: #163bbd;
+  font-size: 71px;
+  text-shadow: 5px 1px 0px #ffffff;
 }

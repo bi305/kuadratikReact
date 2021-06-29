@@ -1,26 +1,25 @@
 @media screen and (max-width: 992px) {
-    .center {
-     text-align: center;
-    }
+  .center {
+    text-align: center;
   }
-  .glow{
-    color: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4)!important;
-  }
-   
-   
-.glow:hover {
-  animation: animate 8s linear infinite;
 }
- 
+
 @keyframes animate {
   0% {
     background-position: 0%;
   }
   100% {
-    background-position: 200%;
+    background-position: 100%;
   }
 }
- 
+.link {
+  color: white;
+}
+.link:hover {
+  color: lightblue;
+  text-decoration: none;
+}
+
 .glow:before {
   content: "";
   position: absolute;
@@ -29,15 +28,15 @@
   bottom: -5px;
   left: -5px;
   z-index: -1;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
+  background: linear-gradient(90deg, #13547a, #ffffff) !important;
+  background-size: 100%;
   border-radius: 40px;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
- 
+
 .glow:hover:before {
   filter: blur(20px);
-  opacity: 1;
+  opacity: 0.5;
   animation: animate 8s linear infinite;
 }

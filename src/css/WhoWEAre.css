@@ -1,19 +1,19 @@
-.who{
-    color: #ffffff;
-    font-size: 71px;
-    text-shadow: 13px 1px 0px rgb(0 0 0 / 30%);
+.who {
+  color: #163bbd;
+  font-size: 71px;
+  text-shadow: 5px 1px 0px #ffffff;
 }
-.bg{
-    background-image: url(../about.jpg);
-    
+.bg {
+  background-image: url(../assets/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
- 
-.overlay{
-    background-color: black;
-    opacity: 0.55 ;
-    color: white;
-    height: 100vh;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+
+.weoverlay {
+  opacity: 1;
+  color: #163bbd;
+  height: 100vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
